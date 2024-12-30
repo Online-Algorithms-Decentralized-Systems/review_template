@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{authblk}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{nameref}
+\usepackage{placeins}
+\usepackage{hyperref}
+\usepackage{biblatex}
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={blue!80!black},
+    citecolor={blue!80!black},
+    urlcolor={blue!80!black}
+}
+
+\usepackage{lipsum}
+\usepackage{enumitem}
+
+% Command for writing comments
+\newcommand\JC[1]{{\color{Maroon} JC: #1}}         % Jared:    Use \JC{my note}
+
+\newcommand*{\doi}[1]{DOI: \href{http://dx.doi.org/#1}{#1}}\setitemize{noitemsep,topsep=5pt,parsep=2pt,partopsep=0pt}
+
+% bibliography
+\addbibresource{refs.bib}
+
+
+% SETUP
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{problem}{Problem}
+
+\title{Review: Title of Paper}
+\author[1]{Author Names}
+\affil[1]{Loyola Marymount University}
+
+\date{\today}
+
+
+\begin{document}
+\maketitle
+
+
+\section{First Pass}
+\begin{enumerate}
+    \item Category: What type of paper is this? A measurement paper? An analysis of an existing system? A description of a research prototype?
+    \item Context: Which other papers is it related to? Which theoretical bases were used to analyze the problem?
+    \item Correctness: Do the assumptions appear to be valid?
+    \item Contributions: What are the paper’s main contributions?
+    \item Clarity: Is the paper well written?
+\end{enumerate}
+
+\section{Second Pass}
+Write a summary of the paper.
+
+\section{Third Pass}
+What are the paper's strong and weak points?
+
+For this course, you should also in this section write about \textit{new} related works published after the subject's publication (and therefore not in the subject's related work section). What interesting work has been done in this area since it's publication? You should cite papers using bibtex (see refs.bib) like this~\cite{DBLP:conf/sirocco/ColemanCK23}.
+
+
+\printbibliography
+
+\end{document}
